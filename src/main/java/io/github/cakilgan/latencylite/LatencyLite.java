@@ -24,7 +24,7 @@ import java.util.Objects;
 public class LatencyLite {
     public static final String MODID = "latencylite";
     public static final String MOD_NAME= "LatencyLite";
-    public static final String VERSION = "0.00001";
+    public static final String VERSION = "0.1";
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public LatencyLite(FMLJavaModLoadingContext context){

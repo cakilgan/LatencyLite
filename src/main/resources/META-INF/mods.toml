@@ -22,8 +22,9 @@ version = "${mod_version}" #mandatory
 displayName = "${mod_name}" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://docs.minecraftforge.net/en/latest/misc/updatechecker/
 updateJSONURL = "" #optional
+logoFile = "logo.png"
 # A URL for the "homepage" for this mod, displayed in the mod UI
-displayURL = "github.com/cakilgan" #optional
+displayURL = "github.com/cakilgan/LatencyLite" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
 #logoFile="latencylite.png" #optional
 # A text field displayed in the mod UI
