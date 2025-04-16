@@ -24,7 +24,7 @@ import java.util.Objects;
 public class LatencyLite {
     public static final String MODID = "latencylite";
     public static final String MOD_NAME= "LatencyLite";
-    public static final String VERSION = "0.2";
+    public static final String VERSION = "0.21";
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public LatencyLite(FMLJavaModLoadingContext context){
@@ -254,7 +254,7 @@ public class LatencyLite {
                     .define("show_ping", true);
             ICON_X_POS = builder
                     .comment("X position of 'signal_icon'")
-                    .defineInRange("signal_icon_x_pos", 60, 0, 1920);
+                    .defineInRange("signal_icon_x_pos", 50, 0, 1920);
             ICON_Y_POS = builder
                     .comment("Y position of 'signal_icon'")
                     .defineInRange("signal_icon_y_pos", 15, 0, 1080);
@@ -272,13 +272,13 @@ public class LatencyLite {
                     .define("show_ping", true);
             PING_COLOR = builder
                     .comment("Color of 'ping' text")
-                    .defineInRange("ping_color", 0XFFFFFF, 0, 0XFFFFFF);
+                    .defineInRange("ping_color", 16777215, 0, 0XFFFFFF);
             PING_X_POS = builder
                     .comment("X position of 'ping' text")
                     .defineInRange("ping_x_pos", 10, 0, 1920);
             PING_Y_POS = builder
                     .comment("Y position of 'ping' text")
-                    .defineInRange("ping_y_pos", 10, 0, 1080);
+                    .defineInRange("ping_y_pos", 20, 0, 1080);
             PING_SCALE_MODIFIER_X = builder
                     .comment("X scale of 'ping' text")
                     .defineInRange("ping_x_scale",0.5,0,1);
@@ -293,13 +293,13 @@ public class LatencyLite {
                     .define("show_avr_ping", true);
             AVERAGE_PING_COLOR = builder
                     .comment("Color of 'average ping' text")
-                    .defineInRange("average_ping_color", 0XFFFFFF, 0, 0XFFFFFF);
+                    .defineInRange("average_ping_color", 16776960, 0, 0XFFFFFF);
             AVERAGE_PING_X_POS = builder
                     .comment("X position of 'average ping' text")
                     .defineInRange("average_ping_x_pos", 10, 0, 1920);
             AVERAGE_PING_Y_POS = builder
                     .comment("Y position of 'average ping' text")
-                    .defineInRange("average_ping_y_pos", 30, 0, 1080);
+                    .defineInRange("average_ping_y_pos", 40, 0, 1080);
             AVERAGE_PING_SCALE_MODIFIER_X = builder
                     .comment("X scale of 'average_ping' text")
                     .defineInRange("average_ping_x_scale",0.5,0,1);
@@ -311,16 +311,16 @@ public class LatencyLite {
             builder.push("Last Refresh Config");
             SHOW_LAST_REFRESH = builder
                     .comment("Show last refresh of ping as text on screen")
-                    .define("show_last_refresh", false);
+                    .define("show_last_refresh", true);
             LAST_REFRESH_COLOR = builder
                     .comment("Color of 'last_refresh' text")
-                    .defineInRange("last_refresh_color", 0XFFFFFF, 0, 0XFFFFFF);
+                    .defineInRange("last_refresh_color", 12632256, 0, 0XFFFFFF);
             LAST_REFRESH_X_POS = builder
                     .comment("X position of 'last_refresh' text")
                     .defineInRange("last_refresh_x_pos", 10, 0, 1920);
             LAST_REFRESH_Y_POS = builder
                     .comment("Y position of 'last_refresh' text")
-                    .defineInRange("last_refresh_y_pos", 50, 0, 1080);
+                    .defineInRange("last_refresh_y_pos", 60, 0, 1080);
             LAST_REFRESH_SCALE_MODIFIER_X = builder
                     .comment("X scale of 'last_refresh' text")
                     .defineInRange("last_refresh_x_scale",0.5,0,1);
